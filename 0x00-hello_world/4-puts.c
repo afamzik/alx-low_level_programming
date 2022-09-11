@@ -2,20 +2,15 @@
 /**
  * main - this is the main function
  * void: its empty
+ * return - retuns value
+ * puts - dhdjdkdkd
+ * @xy: jdkdkd
  */
 void main(void)
 {
-	/**
-	 * @xy[]: takes the string
-	 */
+
 	char xy[] = "\"Programming is like building a multilingual puzzle";
 
-	/**
-	 * puts - prints the string
-	 */
 	puts(xy);
-	/**
-	 * return: this returns a value
-	 */
 	return (0);
 }

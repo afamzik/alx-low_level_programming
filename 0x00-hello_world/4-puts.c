@@ -1,16 +1,11 @@
 #include<stdio.h>
 
 /**
- * main - the base fxn
- * @void: takes nothing
- * puts - printing method
- * Return: return value
+ * main - the main function
+ * Return: 0
  */
-void main(void)
-{ 
-	char xy[] = "\"Programming is like building a multilingual puzzle";
-
-	puts(xy);
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
-

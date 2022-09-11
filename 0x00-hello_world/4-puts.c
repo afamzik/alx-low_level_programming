@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
 	char xy[] = "Programming is like building a multilingual puzzle";
 

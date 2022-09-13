@@ -18,11 +18,11 @@ int main(void)
 
 	if ((n % 10) == 0)
 	{
-		print("0\n");
+		printf("0\n");
 	}
 	else if ((n % 10) > 5)
 	{
-		print("greater than 5\n");
+		printf("greater than 5\n");
 	}
 	else
 	{

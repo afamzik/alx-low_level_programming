@@ -1,12 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- *main - the main fuction that runs the show
+ *_putchar - writes the character c to stdout
+ *@c: The character too print
+ *
  *Return: returns 0
+ *0n error, -1 is returned, and errno is set appropriately
  */
 
-int main(void)
+int _putchar(char c)
 {
-	printf("_putchar");
-	return (0);
+	return (write(1, &c, 1));
 }

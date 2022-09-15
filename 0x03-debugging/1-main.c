@@ -1,8 +1,8 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 /**
- *main - cause continuous looping
- *Return: 0 is the value to be returned
+ *main - causes an infinite loop
+ *Return: 0
  */
 
 int main(void)
@@ -12,6 +12,7 @@ int main(void)
 	printf("infinite loop incoming :(\n");
 
 	i = 0;
+
 	/*
 	*while (i < 10)
 	*{

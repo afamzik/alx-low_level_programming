@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- *_main - putchar
+ *main - putchar
  *Return: returns 0
  */
 
@@ -19,3 +20,4 @@ int main(void)
 	return (0);
 
 }
+^C

@@ -2,9 +2,9 @@
 
 /**
  *print_remaining_days - takes a date and prints how many days are
- *left in the year, taking leap years into consideration
- *@day: day of the month
- *@month: the month in a number format
+ *left in the year, taking leap years into account
+ *@day: day of month
+ *@month: month in number format
  *@year: year
  *Return: void
  */

@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
 *main - main program that performs necessary function
 *Return: returns o

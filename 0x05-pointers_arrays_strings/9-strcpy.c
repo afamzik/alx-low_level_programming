@@ -1,4 +1,4 @@
-#include "main.h"
+ #include "main.h"
 
 /**
 *_strcpy - copies integers
@@ -9,14 +9,14 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int x = 0;
+	int inc = 0;
 
-	while (*(src + x) != '\n')
+	while (*(src + inc) != '\n')
 	{
-		*(dest + x) = *(src + x);
-		x++;
+		*(dest + inc) = *(src + inc);
+		inc++;
 	}
-	*(dest + x) = '\0';
+	*(dest + inc) = '\0';
 
 	return (dest);
 }

@@ -17,13 +17,11 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j]) /*note and first the first match*/
-			{
-				break;
-			}
 
+				break;
+		}
 		if (!accept[j])
 			break; /*returns matches if idx do not match*/
-		}
 
 	}
 

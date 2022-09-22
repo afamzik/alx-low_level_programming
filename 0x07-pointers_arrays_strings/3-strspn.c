@@ -10,7 +10,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
+	unsigned int i, j;
 
 	int matches = 0;
 
@@ -24,8 +24,8 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 
-			if (accept[j + 1] == '\0' && s[i] != accept[j])
-				return (matches); /*returns matches if idx do not match*/
+		if (!accept[j])
+			break; /*returns matches if idx do not match*/
 		}
 
 		i++;

@@ -12,15 +12,12 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
 
-	int matches = 0;
-
-	while (s[i] != '\0')	/* loops through the string s */
+	for (i = 0; s[i]; i++) /*loops the string searched for*/
 	{
-		for (j = 0; accept[j] != '\0'; j++) /*loops the string searched for*/
+		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j]) /*note and first the first match*/
 			{
-				matches++;
 				break;
 			}
 
@@ -28,8 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 			break; /*returns matches if idx do not match*/
 		}
 
-		i++;
 	}
 
-	return (matches);
+	return (i);
 }

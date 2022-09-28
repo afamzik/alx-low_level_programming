@@ -6,7 +6,6 @@
 *@accept: the target
 *Return: returns the result
 */
-
 char *_strpbrk(char *s, char *accept)
 {
 	unsigned  int i, j;

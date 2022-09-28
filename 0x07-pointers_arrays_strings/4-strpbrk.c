@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#define NULL 0
 
 /**
 *_strpbrk - searches a string for any of a set of bytes
@@ -8,6 +6,7 @@
 *@accept: the target
 *Return: returns the result
 */
+
 char *_strpbrk(char *s, char *accept)
 {
 	unsigned  int i, j;
@@ -20,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 				break;
 		}
 		if (accept[j])
-			return (s + 1);
+			return (s + i);
 	}
-	return (NULL);
+	return (0);
 }

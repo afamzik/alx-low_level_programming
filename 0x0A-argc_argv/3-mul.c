@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
 * main - the main function
 *@x: the number of args
@@ -12,7 +12,7 @@ int main(int x, char *mult[])
 	if (x != 3)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	printf("%d\n", atoi(mult[1]) * atoi(mult[2]));

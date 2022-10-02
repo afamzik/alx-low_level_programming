@@ -2,15 +2,15 @@
 
 /**
 * main - the main fuction that prints the number
-*@x: the number of numbers passed
+*@argc: the number of numbers passed
 *@argv: pointer to the array of numbers
 * Return: returns 0 on success
 */
 
-int main(int x, int argv[] __attribute__((unused)))
+int main(int argc, int argv[] __attribute__((unused)))
 {
-	if (x > 0)
-		printf("%d\n", x - 1);
+	if (argc > 0)
+		printf("%d\n", argc - 1);
 
 	return (0);
 }

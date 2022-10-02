@@ -13,7 +13,7 @@ int main(int x, char *arr[])
 	int n;
 	int coins = 0;
 
-	if (x != 1)
+	if (x != 2)
 	{
 		printf("Error\n");
 		return (1);

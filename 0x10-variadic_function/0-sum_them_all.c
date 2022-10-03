@@ -7,9 +7,9 @@
 * Return: returns sum
 */
 
-int sum_them_ all(const unsigened int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
-	va_list valist
+	va_list valist;
 	unsigned int sum = 0, x;
 
 	if (n == 0)
@@ -22,5 +22,5 @@ int sum_them_ all(const unsigened int n, ...)
 
 	va_end(valist);
 
-	return(sum);
+	return (sum);
 }

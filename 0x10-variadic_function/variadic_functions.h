@@ -10,15 +10,15 @@ void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
 /**
-* struct  dt - a struct
+* struct  datatypeCheck - a struct
 *@letter: letter that indicates data type
 *@func: the function pointer
 */
 
-typedef struct dt
+typedef struct datatypeCheck
 {
 	char letter;
 	void (*func)(va_list);
-} dt_alias;
+} checkDatatype;
 
 #endif

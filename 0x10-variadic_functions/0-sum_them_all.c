@@ -21,7 +21,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(valist, n);
 
 	/*loops throug list*/
-	for (x = 0; x < n; x++)
+	for (x = 1; x < n; x++)
 		sum += va_arg(valist, int);
 	va_end(valist);
 	return (sum);

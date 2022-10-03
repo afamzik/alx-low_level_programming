@@ -14,10 +14,10 @@ char *str_concat(char *s1, char *s2)
 	int x;
 
 	if (s1 == NULL)
-		s1 = '\0';
+		s1 = "";
 
 	if (s2 == NULL)
-		s2 = '\0';
+		s2 = "";
 	/*size of first string */
 	for (x = 0; s1[x]; x++)
 		size1++;
@@ -30,6 +30,9 @@ char *str_concat(char *s1, char *s2)
 	size++;
 
 	con_cat = malloc(sizeof(char) * size);
+
+	if (con_cat == NULL)
+		return (NULL);
 
 	/* copy s1 to cocat */
 	x = 0;

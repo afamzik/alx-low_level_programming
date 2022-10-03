@@ -11,8 +11,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *con_cat;
-	int size1 = 0, size2 = 0,  size = 0;
-	int x;
+	int size1 = 0, size2 = 0,  size;
+	int x, y;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	/*size of first string */
 	for (x  = 0; s1[x]; x++)
 		size1++;
-	for (x = 0;  s2[x]; x++)
+	for (y = 0;  s2[y]; y++)
 		size2++;
 
 	size = size1 + size2;
@@ -33,13 +33,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (con_cat == NULL)
 		return (NULL);
+
 	x = 0;
 	for (x = 0; x < size1; x++)
 		con_cat[x] = s1[x];
-	x = size1;
-	for (x = size1; x < size2; x++)
-		con_cat[x] = s2[x];
+	y = 0;
+	for (y = 0; y < size2; y++)
+		con_cat[x] = s2[y], x++;
 
-	*(con_cat + x) = '\0';
 	return (con_cat);
 }

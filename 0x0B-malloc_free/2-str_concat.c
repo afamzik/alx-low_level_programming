@@ -40,5 +40,6 @@ char *str_concat(char *s1, char *s2)
 	for (x = size1; x < size2; x++)
 		con_cat[x] = s2[x];
 
+	*(con_cat + x) = '\0';
 	return (con_cat);
 }

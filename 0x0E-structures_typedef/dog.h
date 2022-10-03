@@ -4,16 +4,14 @@
 /**
 *dog_t - alias for dog struct
 */
-
 typedef struct dog dog_t;
 
 /**
 * struct dog - the dog struct/structure dog
-*@name: the name of dog
-*@age: the age of dog
-*@owner: the owner of dog
+* @name: the name of dog
+* @age: the age of dog
+* @owner: the owner of dog
 */
-
 struct dog
 {
 	char *name;

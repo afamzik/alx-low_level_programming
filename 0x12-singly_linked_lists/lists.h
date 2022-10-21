@@ -17,7 +17,7 @@ void free_list(list_t *head);
 *@str: string
 *@len: lenght of string
 *@next_node: points to the next node
-*/ctruct
+*/
 
 typedef struct list_s
 {
